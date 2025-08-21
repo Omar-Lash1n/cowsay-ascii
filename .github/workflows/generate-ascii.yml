@@ -1,0 +1,13 @@
+name: Dragon workflow
+on: push
+
+jobs:
+    Ascii_job:
+        runs-on: self-hosted
+        steps:
+              - name: Checkout repository
+                uses: actions/checkout@v5
+
+              - name: install cowsay program
+                run: |
+                  bash script.sh
